@@ -7,11 +7,11 @@ const Navigation = () => {
         <Container>
           <Navbar.Toggle aria-controls="rexponsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
-              <Nav.Link>Home</Nav.Link>
-              <Nav.Link>Exercise Search</Nav.Link>
-              <Nav.Link>About</Nav.Link>
-              <Nav.Link>Profile</Nav.Link>
+            <Nav className="container-fluid nav-list">
+              <Nav.Link className="active mx-2">Home</Nav.Link>
+              <Nav.Link className="mx-2">Exercise Search</Nav.Link>
+              <Nav.Link className="mx-2">About</Nav.Link>
+              <Nav.Link className="ms-auto mx-2">Profile</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
