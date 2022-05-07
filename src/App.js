@@ -1,14 +1,27 @@
 import './App.css';
-import { Router, Routes, Route } from 'react-router';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import ExerciseSearch from './pages/ExerciseSearch'
+import Profile from './pages/Home'
+import About from './pages/About'
+import MyWhiteBoard from './pages/MyWhiteBoard';
+
 
 function App() {
   return (
 
     <>
-
-      <Navigation />
-  
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home /> }/>
+          <Route path='exerciseSearch' element={<ExerciseSearch /> }/>
+          <Route path='about' element={<About /> }/>
+          <Route path='myWhiteBoard' element={<MyWhiteBoard />} />
+          <Route path='profile' element={<Profile /> }/>
+        </Routes>
+        <Navigation />
+      </Router>
     </>
   );
 }
