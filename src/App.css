@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Koulen&family=Mukta+Mahee&display=swap');
+/* Fira Sans Condensed, Koulen, Mukta Mahee */
+
 /* Navbar styles */
 .navbar {
   height: 4rem;
   font-size: 1.3rem;
+}
+
+
+/* Header Styles */
+.header {
+  margin-top: 6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-header {
+  font-style: italic;
+}
+
+.home-header-title {
+  font-family: 'Koulen', sans-serif;
 }
